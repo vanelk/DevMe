@@ -2,11 +2,9 @@ winget install -e --id Microsoft.PowerShell
 Start-Process pwsh -Verb RunAs -ArgumentList "-file $($MyInvocation.MyCommand.Path)"
 exit
 
-
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 $WorkingPath=$env:TEMP+"\uwu"
 mkdir $WorkingPath
-Copy-Item user_profile.ps1 $WorkingPath
 cd $WorkingPath
 #scoop
 iwr -useb get.scoop.sh | iex
@@ -61,7 +59,8 @@ Install-Module oh-my-posh -Scope CurrentUser -Force
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
 #Configuring Poweshell Profile
 mkdir ~/.config/powershell
-Move-Item user_profile.ps1 ~/.config/powershell/user_profile.ps1
+#Use git repo cdn
+curl "https://cdn.jsdelivr.net/gh/vanelk/DevMe/user_profile.ps1" -OutFile ~/.config/powershell/user_profile.ps1
 mkdir ([system.io.path]::GetDirectoryName($PROFILE.CurrentUserCurrentHost))
 echo ". $env:USERPROFILE\.config\powershell\user_profile.ps1" >> $PROFILE.CurrentUserCurrentHost
 #Office Tools

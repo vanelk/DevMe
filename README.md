@@ -1,9 +1,9 @@
 # DevMe
-A Powershell script to install a 10x dev/termial enviroment in windows.
+A Powershell script to install a 10x dev/terminal enviroment in windows.
 
 ## Tools installed
 - Windows Powershell
-- Scoop
+- scoop
 - Hack (Nerd Font)
 - jq
 - sudo 
@@ -21,4 +21,4 @@ A Powershell script to install a 10x dev/termial enviroment in windows.
 - Bitwarden
 - PowerToys
 - Brave
-- WSL
+- WSL with Ubuntu
