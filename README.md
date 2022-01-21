@@ -1,5 +1,14 @@
 # DevMe
 A Powershell script to install a 10x dev/terminal enviroment in windows.
+## Run
+###  In PowerShell run:
+```powershell
+iwr -useb  "https://cdn.jsdelivr.net/gh/vanelk/DevMe/install-script.ps1" | iex
+```
+or
+
+### Download the repo and run `install-script.ps1`.
+
 
 ## Tools installed
 - Windows Powershell
