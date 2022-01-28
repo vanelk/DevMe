@@ -25,6 +25,7 @@ or
 - psreadline
 
 ## Optionals Office/Programming Tools
+- VSCode
 - Figma
 - Slack
 - Bitwarden
